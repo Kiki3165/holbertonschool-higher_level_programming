@@ -5,4 +5,4 @@ def pow(a, b):
     elif a == 0:
         return 0
     elif b == 1:
-        return a*pow(a, b-1)
+        return pow(a, b-1)
