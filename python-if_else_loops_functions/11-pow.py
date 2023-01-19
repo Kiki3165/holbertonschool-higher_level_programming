@@ -6,4 +6,3 @@ def pow(a, b):
         return 0
     elif b == 1:
         return a*pow(a, b-1)
-    print(pow(a, b))
