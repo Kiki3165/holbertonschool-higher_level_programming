@@ -7,7 +7,8 @@ if __name__ == "__main__":
     result2 = sub(a, b)
     result3 = mul(a, b)
     result4 = div(a, b)
-    print(f"{a} + {b} = {result1}")
-    print(f"{a} - {b} = {result2}")
-    print(f"{a} * {b} = {result3}")
-    print(f"{a} / {b} = {result4}")
+    print("{a} + {b} = {result1}".format(a, b, add(a, b)))
+    print("{a} - {b} = {result2}".format(a, b, sub(a, b)))
+    print("{a} * {b} = {result3}".format(a, b, mul(a, b)))
+    print("{a} / {b} = {result4}".format(a, b, div(a, b)))
+    
