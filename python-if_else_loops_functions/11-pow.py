@@ -8,3 +8,4 @@ def pow(a, b):
         return a
     else:
         return a*pow(a, b-1)
+    print(pow(a, b))
