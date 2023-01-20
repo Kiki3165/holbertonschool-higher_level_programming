@@ -9,7 +9,7 @@ if len(argv) == 0:
 if len(sys.argv) - 1 == 1:
     print('{} {}:'.format(len(sys.argv) - 1, "argument"))
 else:
-    print(f"{len(argv)} arguments", end=':' if len(argv) == 1 else ':')
+    print(f"{len(argv)} arguments", end=':')
     print()
     for i, arg in enumerate(argv, start=1):
         print(f"{i}: {arg}")
