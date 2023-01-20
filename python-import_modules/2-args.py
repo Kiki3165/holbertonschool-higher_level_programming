@@ -5,7 +5,7 @@ if __name__ == "__main__":
     argv = sys.argv[1:]
 
 if len(argv) == 0:
-    print("argument")
+    print("0 arguments")
 else:
     print(f"{len(argv)} arguments", end=':' if len(argv) != 1 else ':')
     print()
