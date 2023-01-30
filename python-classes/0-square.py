@@ -4,4 +4,3 @@
 class Square:  # empty class
     pass
 square = Square()
-print(Square)
