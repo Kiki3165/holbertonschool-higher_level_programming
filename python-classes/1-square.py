@@ -2,6 +2,7 @@
 
 '''define square'''
 class Square:
-    pass
-size = Square()
-print(size)
+    '''def'''
+    def __init__(self, size):
+        '''doc'''
+        self.__size = size
