@@ -2,4 +2,4 @@
 
 # create empty class
 class Square:  # empty class
-    pass
+    pass  #empty
