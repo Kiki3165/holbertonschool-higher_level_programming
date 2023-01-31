@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+'''simple def'''
+
 
 def add_integer(a, b=98):
     if type(a) not in [int, float]:
