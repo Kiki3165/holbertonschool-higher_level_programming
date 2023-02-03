@@ -1,23 +1,19 @@
 >>> add_integer = __import__('0-add_integer').add_integer
 
 
->>> add_integer(1, 2)
-3
+    Adds two numbers.
 
->>> add_integer(100, -2)
-98
+    >>> add_integer(2, 3)
+    5
+    >>> add_integer(2.5, 3)
+    5
+    >>> add_integer(2, 3.5)
+    5
+    >>> add_integer(2.5, 3.5)
+    6
 
->>> add_integer(2)
-100
-
->>> add_integer(100, -2)
-98
-
->>> add_integer(-2, -2)
--4
-
->>> add_integer(-2, 100)
-98
+    Raises:
+    TypeError: if either a or b is not an integer or float.
 
 
 if __name__ == "__main__":
