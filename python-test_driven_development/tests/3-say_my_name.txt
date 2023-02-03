@@ -1,0 +1,21 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+    """
+    This function prints "My name is first_name last_name"
+
+    Args:
+    first_name (str): First name
+    last_name (str, optional): Last name. Default is empty string.
+
+    Raises:
+    TypeError: If first_name or last_name is not a string.
+
+    Example:
+    >>> say_my_name("John", "Doe")
+    My name is John Doe
+    >>> say_my_name("Jane")
+    My name is Jane 
+    """
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
