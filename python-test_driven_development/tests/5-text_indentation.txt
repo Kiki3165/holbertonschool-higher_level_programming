@@ -1,0 +1,24 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+    This function prints a text with 2 new lines after each of these characters: ., ?, and :.
+
+    Args:
+    text (str): The text to be indented.
+
+    Raises:
+    TypeError: If text is not a string.
+
+    Example:
+    >>> text_indentation("Hello world. How are you today?")
+    Hello world. 
+
+    How are you today?
+
+    >>> text_indentation("This is a sample text: It has some punctuations.")
+    This is a sample text: 
+
+    It has some punctuations.
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
