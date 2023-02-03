@@ -1,0 +1,25 @@
+>>> print_square = __import__('4-print_square').print_square
+
+    This function prints a square with the character "#".
+
+    Args:
+    size (int): The size length of the square
+
+    Raises:
+    TypeError: If size is not an integer.
+    ValueError: If size is less than 0.
+
+    Example:
+    >>> print_square(3)
+    ###
+    ###
+    ###
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
