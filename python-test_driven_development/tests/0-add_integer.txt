@@ -10,7 +10,7 @@
     >>> add_integer(2, 3.5)
     5
     >>> add_integer(2.5, 3.5)
-    6
+    5
 
     Raises:
     TypeError: if either a or b is not an integer or float.
