@@ -2,6 +2,7 @@
 '''simple class'''
 
 
+
 class Rectangle(BaseGeometry):
     '''simple def'''
     def __init__(self, width, height):
