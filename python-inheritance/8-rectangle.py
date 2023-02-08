@@ -5,6 +5,7 @@
 class Rectangle(BaseGeometry):
     '''simple def'''
     def __init__(self, width, height):
+        '''docu'''
         self.integer_validator("width", width)
         self._width = width
         self.integer_validator("height", height)
