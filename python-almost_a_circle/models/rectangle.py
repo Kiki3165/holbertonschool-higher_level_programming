@@ -24,6 +24,9 @@ class Rectangle(Base):
         for i in range(self.__height):
             print("#" * self.__width)
 
+    def __str__(self):
+        return self.id * self.x * self.y * self.__height * self.__width
+
     @property
     def width(self):
         return self.__width
