@@ -19,6 +19,11 @@ class Rectangle(Base):
         '''def area'''
         return self.__width * self.__height
 
+    def display(self):
+        '''def display'''
+        for i in rang(self.__height):
+            print("#" * self.__width)
+
     @property
     def width(self):
         return self.__width
