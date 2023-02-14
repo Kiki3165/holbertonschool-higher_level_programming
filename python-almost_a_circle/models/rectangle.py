@@ -22,11 +22,11 @@ class Rectangle(Base):
     def display(self):
         '''def display'''
         for i in range(self.__height):
-            print("#" * self.__width)
+            print("#" * self.__width * self.x * self.y)
 
     def __str__(self):
         '''def str'''
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
 
     @property
     def width(self):
