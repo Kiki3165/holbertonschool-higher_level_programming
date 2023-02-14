@@ -21,7 +21,7 @@ class Rectangle(Base):
 
     def display(self):
         '''def display'''
-        for i in rang(self.__height):
+        for i in range(self.__height):
             print("#" * self.__width)
 
     @property
