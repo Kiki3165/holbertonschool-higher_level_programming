@@ -16,6 +16,7 @@ class Rectangle(Base):
         self.y = y
     
     def area(self):
+        '''def area'''
         return self.area
 
     @property
