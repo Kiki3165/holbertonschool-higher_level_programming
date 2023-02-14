@@ -14,10 +14,10 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-    
+
     def area(self):
         '''def area'''
-        return self.area
+        return self.__height * self.__height
 
     @property
     def width(self):
