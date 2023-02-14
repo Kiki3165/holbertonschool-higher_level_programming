@@ -22,7 +22,7 @@ class Rectangle(Base):
     def display(self):
         '''def display'''
         for i in range(self.__height):
-            print("#" * self.__width * self.x * self.y)
+            print("#" * self.__width * self.x + self.y)
 
     def __str__(self):
         '''def str'''
