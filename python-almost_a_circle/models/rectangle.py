@@ -32,9 +32,9 @@ class Rectangle(Base):
 
     def update(self, *args):
         '''def update'''
-        print("first arg", self.id)
+        print("", self.id)
         for arg in args:
-            print("other arg through *args :", arg)
+            print("", arg)
 
     @property
     def width(self):
