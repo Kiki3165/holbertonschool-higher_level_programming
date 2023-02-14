@@ -28,7 +28,13 @@ class Rectangle(Base):
 
     def __str__(self):
         '''def str'''
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return f"[Rectangle] ({id=}) {self.x}/{self.y} - {self.width}/{self.height}"
+
+    def update(self, *args):
+        '''def update'''
+        print("first arg", self.id)
+        for arg in args:
+            print("other arg through *args :", arg)
 
     @property
     def width(self):
