@@ -2,6 +2,9 @@
 '''def class'''
 
 
+import json
+
+
 class Base:
     '''class'''
     __nb_objects = 0
@@ -13,3 +16,11 @@ class Base:
         else:
             self.__class__.__nb_objects += 1
             self.id = self.__class__.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        '''def json'''
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
