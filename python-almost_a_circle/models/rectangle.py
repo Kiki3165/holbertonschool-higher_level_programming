@@ -98,4 +98,5 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         '''def dict'''
-        return {key[12:]: value for key, value in self.__dict__.items() if key.startswith('_Rectangle')}
+        return {"id": self.id, "width": self.__width, "height": self.__height,
+                "x": self.__x, "y": self.__y}
