@@ -87,3 +87,7 @@ class Rectangle(Base):
         elif value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def to_dictionary(self):
+        '''def'''
+        return {key[12:]: value for key, value in self.__dict__.items() if key.startswith('_Rectangle')}
