@@ -70,6 +70,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        '''def'''
         return self.__x
 
     @x.setter
@@ -96,5 +97,5 @@ class Rectangle(Base):
         self.__y = value
 
     def to_dictionary(self):
-        '''def'''
+        '''def dict'''
         return {key[12:]: value for key, value in self.__dict__.items() if key.startswith('_Rectangle')}
