@@ -26,7 +26,7 @@ class Square(Rectangle):
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
 
     def update(self, *args, **kwargs):
-        '''def'''
+        '''def update'''
         if args:
             attrs = ["id", "size", "x", "y"]
             for attr, value in zip(attrs, args):
