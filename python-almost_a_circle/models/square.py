@@ -21,6 +21,7 @@ class Square(Rectangle):
         self.height = value
 
     def __str__(self):
+        '''def'''
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
 
     def update(self, *args, **kwargs):
