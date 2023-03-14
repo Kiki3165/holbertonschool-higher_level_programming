@@ -1,5 +1,3 @@
 -- 3 first students IN the Batch ID=3 
 -- because Batch 3 is the best!
-SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, IS_NULLABLE, COLUMN_DEFAULT, COLUMN_KEY, EXTRA 
-FROM INFORMATION_SCHEMA.COLUMNS 
-WHERE TABLE_SCHEMA = '<database_name>' AND TABLE_NAME = '<table_name>';
+SHOW CREATE TABLE first_table;
