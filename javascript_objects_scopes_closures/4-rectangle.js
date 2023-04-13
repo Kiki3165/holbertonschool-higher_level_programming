@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 class Rectangle {
-  constructor(w, h) {
+  constructor (w, h) {
     if (w <= 0 || h <= 0) {
       return {};
     }
@@ -10,9 +10,9 @@ class Rectangle {
   }
 
   print () {
-    let row = "";
+    let row = '';
     for (let i = 0; i < this.width; i++) {
-      row += "X";
+      row += 'X';
     }
     for (let j = 0; j < this.height; j++) {
       console.log(row);
