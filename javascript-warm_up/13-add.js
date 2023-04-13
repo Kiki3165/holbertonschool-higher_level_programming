@@ -4,4 +4,4 @@ function add (num1, num2) {
   return num1 + num2;
 }
 
-  window.add = add;
+global.add = add;
