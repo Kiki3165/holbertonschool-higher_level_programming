@@ -22,7 +22,7 @@ request.get(url, (error, response, body) => {
     });
 
     Object.keys(completedTasks).forEach((userId) => {
-      console.log(`User ${userId} completed ${completedTasks[userId]} tasks`);
+      console.log(`${userId} ${completedTasks[userId]}`);
     });
   }
 });
