@@ -1,15 +1,14 @@
-#!/usr/nbin/node
+#!/usr/bin/node
 
-const request = require('request');
+const axios = require('axios');
 const movieId = process.argv[2];
 
 const url = `https://swapi-api.hbtn.io/api/films/${movieId}`;
 
-request.get(url, (error, response, body) => {
-  if (error) {
+axios.get(url)
+  .then((response) => {
+    console.log(response.data.title);
+  })
+  .catch((error) => {
     console.error(error);
-  } else {
-    const movie = JSON.parse(body);
-    console.log(movie.title);
-  }
-});
+  });
